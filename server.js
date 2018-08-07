@@ -2,16 +2,16 @@ var http = require("http");
 
 var PORT1 = 7000;
 
-function handleRequest(request, response) {
+function Request(requests, response) {
 
   response.end("You gon` be somebody someday..");
 }
 
-var server = http.createServer(handleRequest);
+var servers = http.createServer(Request);
 
-server.listen(PORT1, function() {
+servers.listen(PORT1, function() {
 
-  console.log("You gon` be somebody someday.." + PORT);
+  console.log("You gon` be somebody someday.." + PORT1);
 });
 
 var http = require("http");
